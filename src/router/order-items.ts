@@ -11,7 +11,7 @@ import {
 
 export default (router: express.Router) => {
   router.get('/order-items', getAllOrderItems);
-  router.get('/orders/:id/order-items', getAllOrderItemsForOrder)
+  router.get('/orders/:id/order-items', getAllOrderItemsForOrder);
   router.post('/order-items/new', createOrderItem);
   router.get('/order-items/:id', getOrderItem);
   router.delete('/order-items/:id', deleteOrderItem);
